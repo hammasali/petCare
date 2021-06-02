@@ -64,7 +64,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           labelText: 'Full name',
                         ),
                       ),
-                      SizedBox(height: kDefaultPadding),
                       TextField(
                         decoration: InputDecoration(
                           suffixIcon: Icon(
@@ -167,14 +166,14 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Icon(
-                              Icons.facebook,
+                              FontAwesomeIcons.facebook,
                               size: 32,
                               color: Colors.blue,
                             ),
                             SizedBox(width: kDefaultPadding * 2),
                             Icon(
                               FontAwesomeIcons.google,
-                              size: 28,
+                              size: 29,
                               color: Colors.red,
                             ),
                           ],
@@ -186,7 +185,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         children: [
                           Text('Already have an account? '),
                           GestureDetector(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.pushNamed(context, "/signIn_screen");
+                            },
                             child: Text(
                               'Sign In',
                               style: TextStyle(

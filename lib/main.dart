@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pet_care/routes.dart';
-import 'package:pet_care/screens/login_screen.dart';
-import 'package:pet_care/screens/register_screen.dart';
+import 'screens/login_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,7 +11,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
       routes: routes,
-      initialRoute: RegisterScreen.routeName,
+      initialRoute: LoginScreen.routeName,
     );
   }
 }

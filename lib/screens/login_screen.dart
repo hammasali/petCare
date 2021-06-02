@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:pet_care/constants.dart';
-import 'package:pet_care/screens/register_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   static const String routeName = "/";
@@ -133,19 +132,19 @@ class LoginScreen extends StatelessWidget {
               SizedBox(height: kDefaultPadding * 3),
               GestureDetector(
                 onTap: () {
-                  print('Tapped');
+                  Navigator.pushNamed(context, "/register_screen");
                 },
                 child: Container(
                   padding: EdgeInsets.symmetric(vertical: kDefaultPadding),
                   decoration: BoxDecoration(
-                    color: Color(0xFFA73131),
+                    color: Color(0xFFFFFFFF),
                     borderRadius: BorderRadius.circular(32),
                   ),
                   child: Center(
                     child: Text(
                       'Register with Email',
                       style: TextStyle(
-                        color: Colors.lightBlueAccent,
+                        color: Colors.black,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -158,7 +157,9 @@ class LoginScreen extends StatelessWidget {
                 children: [
                   Text('Already have an account? '),
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, "/signIn_screen");
+                    },
                     child: Text(
                       'Sign In',
                       style: TextStyle(
