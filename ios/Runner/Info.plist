@@ -12,6 +12,8 @@
 		<string>6.0</string>
 		<key>CFBundleName</key>
 		<string>pet_care</string>
+		<key>NSCalendarsUsageDescription</key>
+        <string>INSERT_REASON_HERE</string>
 		<key>CFBundlePackageType</key>
 		<string>APPL</string>
 		<key>CFBundleShortVersionString</key>

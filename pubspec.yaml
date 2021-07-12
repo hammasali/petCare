@@ -13,15 +13,30 @@ dependencies:
   cupertino_icons: ^1.0.3
   font_awesome_flutter: ^9.0.0
   flutter_native_splash: ^1.1.8+4
-  firebase_core: ^1.2.0
-  firebase_auth: ^1.2.0
-  cloud_firestore: ^2.2.0
+  flutter_rating_bar: ^4.0.0
+  firebase_core: ^1.2.1
+  firebase_auth: ^1.3.0
+  cloud_firestore: ^2.2.1
+  firebase_storage: ^8.1.1
   google_sign_in: ^5.0.4
-  flutter_facebook_auth: ^3.4.0
+  flutter_facebook_auth: ^3.4.1
   email_validator: ^2.0.1
   equatable: ^2.0.2
   flutter_bloc: ^7.0.1
+  shared_preferences: ^2.0.6
+  image_picker: ^0.8.0+1
+  add_2_calendar: ^2.1.0
+  path_provider: ^2.0.2
+  destiny: ^1.0.0
+  stripe_payment: ^1.1.1
+  google_fonts: ^2.1.0
+  adobe_xd: ^2.0.0+1
+  flutter_carousel_slider: ^1.0.8
+  http: ^0.13.3
   bloc: ^7.0.0
+  intl: ^0.17.0
+  flutter_credit_card: ^2.0.0
+
 
 flutter_native_splash:
   color: "#F9FBFF"
@@ -39,6 +54,8 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/images/products/
+    - assets/mock/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
