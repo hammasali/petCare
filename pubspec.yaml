@@ -41,7 +41,7 @@ dependencies:
 flutter_native_splash:
   color: "#F9FBFF"
   image: assets/images/PetLogo.png
-  text: "Pet Care"
+#  text: "Pet Care"
   android: true
   ios: true
 
